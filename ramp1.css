@@ -1,0 +1,61 @@
+*{ box-sizing: border-box; }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header{
+  position: fixed;
+  top: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+}
+
+.row5{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row5 a{
+  display: block;
+}
+
+.row5 img{
+  width: 20vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+@media (max-width: 760px){
+  .row5{
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .row5 a{
+    flex: 1 0 20%;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .row5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

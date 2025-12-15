@@ -1,0 +1,195 @@
+*{
+	box-sizing: border-box;
+	font-family:"Apple SD Gothic Neo",sans-serif;
+}
+
+html, body{
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+	padding: 3%;
+}
+
+.body{
+	height: 100%;
+	display: grid;
+	grid-template-columns: 0.95fr 2.05fr;
+	gap: 3%;
+}
+
+.post{
+	height: 85vh;
+	min-height: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: flex-start;
+}
+
+.cover{
+	margin-top: 1%;
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 7px;
+	box-shadow: 0 8px 16px rgba(0,0,0,.35);
+	align-items: center;
+}
+
+.picture{
+	display: grid;
+	grid-template-columns: 58% 42%;
+	gap: 3%;
+	align-items: start;
+	min-width: 0;
+}
+
+.slider{
+	display: grid;
+	grid-template-columns: 44px 1fr 44px;
+	align-items: center;
+	gap: 2%;
+	min-width: 0;
+}
+
+#s{
+	width: 100%;
+	aspect-ratio: 3 / 4;
+	object-fit: cover;
+	display: block;
+	border-radius: 7px;
+	box-shadow: 0 8px 16px rgba(0,0,0,.35);
+}
+
+.button{
+	border: 0;
+	background: transparent;
+	padding: 0;
+	font-size: 44px;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.text{
+	min-height: 0;
+	overflow: hidden;
+}
+
+h2{
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.small{
+	margin: 6px 0 0;
+	font-size: 9px;
+	font-weight: 700;
+}
+
+h3{
+	margin: 12px 0 6px;
+	font-size: 15px;
+	font-weight: 700;
+	margin-top: 25px;
+}
+
+p{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.8;
+	text-align: justify;
+	text-justify: inter-word;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	text-align-last: left;
+}
+
+html, body{
+	margin: 0;
+	height: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-width: none;
+}
+
+body{
+	padding: 3%;
+}
+
+li {
+	list-style: none;
+}
+
+.nav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	text-decoration: none;
+	font-size: 12px;
+	margin-bottom: 24px;
+	padding: 12px 0;
+
+}
+
+.nav a{
+	  margin: 0; 
+	  padding: 6px 10px;
+	  text-decoration: none;
+	  color: #111;
+	  list-style: none;
+}
+
+.nav a:hover{
+	opacity: 0;
+}
+@media (max-width: 780px){
+	.body{
+		grid-template-columns: 1fr;
+		gap: 3%;
+	}
+
+	.post{
+		height: auto;
+	}
+
+	.cover{
+		width: min(94vw, 520px);
+		height: auto;
+		object-fit: contain;
+		display: block;
+		margin: 0 auto;
+		object-fit: cover;
+	}
+
+	.picture{
+		grid-template-columns: 1fr;
+		gap: 3%;
+	}
+
+	.slider{
+		width: min(94vw, 520px);
+		margin: 0 auto;
+	}
+
+	#s{
+		width: 100%;
+		aspect-ratio: 3 / 4;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.text{
+		min-width: 0;
+		margin-top: 3%;
+		padding-left: 2pt;
+	}
+}
