@@ -5,8 +5,8 @@ window.onload = function () {
   const next = document.getElementById("next");
 
   const imgs = [
-    "img/23.jpeg","img/24.jpeg","img/25.jpeg","img/26.jpeg",
-    "img/27.jpeg"
+    "23.jpeg","24.jpeg","25.jpeg","26.jpeg",
+    "27.jpeg"
   ];
 
   let currentIdx = 0;
